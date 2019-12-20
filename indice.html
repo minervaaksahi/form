@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Ejemplo de formulario maquetado</title> 
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link href="estilo.css" rel="stylesheet" type="text/css" media="screen">
+        <script type="text/javascript" src="javascript.js"></script>
+    </head>
+
+    <body>
+        <form name="formDatosPersonales" id="formDatosPersonales" onsubmit="return valida()" target="_blank">
+            <h1>Título blabla</h1> 
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" required/>
+            
+            <br><br> 
+
+            <label for="edad">Edad</label>
+            <input type="number" name="edad" id="edad" placeholder="Edad" min="5" max="99" required/>
+            
+            <br><br> 
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email" required />
+        
+            <br><br>   
+
+            <label for="mensaje">Extra</label>
+            <textarea name="mensaje" for="extra" placeholder="Extra en menos de 250 carácteres" maxlength="250"></textarea>
+            <br>
+            <input type="submit" name="enviar" value="enviar datos"/>
+            <input type="reset" name="cancel" value="borrar datos"/>    
+            <br>
+        </form>
+</body>
+</html>
